@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .conteudo img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <di class="card">
+            <div class="card-header">
+                <h3>Achar endereço pelo CEP</h3>
+            </div>
+
+            <div class="card-body">
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input class="form-control" type="text" name="cep" id="cep">
+                        <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <di class="card">
+            <div class="card-header">
+                <h3>Achar CEP pelo endereço</h3>
+                <p>(endereço dentro da cidade de São Paulo)</p>
+            </div>
+
+            <div class="card-body">
+                <form action="/envia-cep2" method="POST">
+                    <div class="form-group">
+                        
+                        <label for="end">Digite o endereço</label>
+                        <input class="form-control" type="text" name="end" id="end">
+                        
+                        <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
